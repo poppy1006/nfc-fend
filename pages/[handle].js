@@ -24,7 +24,7 @@ const router = useRouter();
 
     useEffect(()=>{
         if(router.query?.handle){
-            fetch(`https://nfc-bend.cyclic.app/get/${router.query.handle}`)
+            fetch(`http://localhost:1000/get/${router.query.handle}`)
             .then(res=>res.json())
             .then(data=>{
                 if (data.status==='error') return toast.error(data.error);

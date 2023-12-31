@@ -22,7 +22,7 @@ const Apply = () => {
     e.preventDefault();
     if(!category) return toast.error('Add a category');
     // backend part
-    fetch('https://nfc-bend.cyclic.app/api/register', {
+    fetch('http://localhost:1000/api/register', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

@@ -15,7 +15,8 @@ export const dashboard = () => {
 
 // BACKEND //
 
-    fetch('https://nfc-bend.cyclic.app/data/dashboard', {
+    // 
+    fetch('http://localhost:1000/data/dashboard', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'

@@ -26,7 +26,7 @@ const Apply = () => {
     
 
     // BACKEND
-    fetch('https://nfc-bend.cyclic.app/api/login', {
+    fetch('http://localhost:1000/api/login', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
